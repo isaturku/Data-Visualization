@@ -1,0 +1,146 @@
+@use "@material/circular-progress/mdc-circular-progress";
+#mapid {
+  height: 850px;
+  border: 5px;
+  border-color: red;
+}
+
+#infoSidebar {
+  position: fixed;
+  height: 100vh;
+  width: 25vw;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: gray;
+  overflow-x: hidden;
+  padding-top: 20px;
+  transition: 0.5s ease;
+  color: white;
+  text-align: center;
+}
+#infoSidebar * {
+  margin: 0 auto;
+  transition: 0.1s ease;
+}
+#weather,
+#bikes,
+#wlinien {
+  margin: 3rem 1rem;
+  border-radius: 0.5rem;
+  padding: 2rem 0;
+  background-color: #909090;
+  margin-bottom: 3rem;
+}
+#closeBtn {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#infoSidebar .logo {
+  display: inline;
+  margin-bottom: 50px;
+}
+circle {
+  stroke: white;
+}
+.transport {
+  padding: 5px 10px;
+  margin-bottom: 20px !important;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+.transport * {
+  margin: 0 !important;
+  display: inline;
+}
+.line {
+  border-radius: 2px;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+}
+span {
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background: #909090;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: silver;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+.station {
+  margin-bottom: 50px !important;
+  cursor: default;
+  font-size: smaller;
+  font-weight: bold;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: middle;
+  height: 100px;
+}
+.station * {
+  margin: 0 !important;
+}
+.thumbnail {
+  flex: 30%;
+}
+.station img {
+  width: 100%;
+  height: auto;
+}
+.bb {
+  flex: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.amount {
+  padding: 2px 0;
+  border-radius: 5px;
+  display: inline-block;
+  width: 25px;
+  text-align: center;
+  background-color: darkgray;
+}
+.map {
+  color: #cf0000;
+}
+.map:hover {
+  cursor: pointer;
+  color: red;
+}
+.name {
+  flex: 35%;
+  padding: 0px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  text-align: left;
+}
